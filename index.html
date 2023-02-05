@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script:regular" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div id="humburger">&equiv;</div>
+                <nav class="header__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item search">
+                            <form class="form_search" >
+                                <div class="menu__search"><img src="img/clarity_search-line.png" ></div>
+                                <input type="text" id="search" placeholder="Поиск">
+                            </form>
+                        </li>
+                        <li class="menu__item">
+                            <div  class="menu__login"><img src="img/clarity_avatar-line.svg" ></div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__fav"><img src="img/clarity_heart-line.svg" alt=""></div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__bag"><img src="img/clarity_shopping-bag-line.svg" alt=""></div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu_hidden">
+                    <img class="menu_logo" src="img/logo.png" alt="">
+                    <a class="menu_item" href="">Женщинам</a>
+                    <a class="menu_item" href="#">Мужчинам</a>
+                    <a class="menu_item" href="">Детям</a>
+                    <a class="menu_item" href="">Обувь</a>
+                    <a class="menu_item" href="">Игрушки</a>
+                    <a class="menu_item" href="">Аксессуары</a>
+                    <a class="menu_item" href="">Большие размеры</a>
+                    <a class="menu_item" href="">Дополнительно</a>
+                    <a class="menu_item" href="">Акции</a>
+                    <div class="menu_hidden-close">&#10006</div>
+                </div>
+                <div class="login_hidden">
+                    <div class="login_avatar">
+                        <div class="login_avatar-img"><img src="" alt=""></div>
+                        <button data-popup="popup-login" class="open-popup login_button">Войти</button>
+                    </div>
+                    
+                    <div class="login_item">
+                        <img src="img/clarity_shopping-bag-line.svg" alt="">
+                        <span class="info_text">Корзина</span>
+                    </div>
+                    <hr>
+                    <div class="login_item">
+                        <img src="img/clarity_heart-line.svg" alt="">
+                        <span class="info_text">Избранное</span>
+                    </div>
+                    <div class="login_item">
+                        <img src="img/clarity_eye-line.png" alt="">
+                        <span class="info_text">Просмотренные</span>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="main_container container">
+                <div class="main_left">
+                    <img src="img/main_l.png" alt="">
+                    <h1>Добро пожаловать в <span class="main_logo">Cocteil</span></h1> 
+                    <div class="main_text">Экономим Ваше время!<br>
+                        Предлагаем лучшие цены!<br>
+                        Доставляем в кратчайшие сроки!</div>
+                </div>
+                <div class="main_right"><img src="img/main_s.png" alt=""></div>
+                <div class="main_button">
+                    <p>Каталог</p>
+                    <img class="button_arrow" src="img/Arrow 8.svg" alt="">
+                </div>
+                <div class="main_button__active">
+                    <p>Каталог</p>
+                    <img class="button_arrow" src="img/Arrow 8 act.png" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="popup popup-login" data-opened="0">
+            <div class="popup-content">
+                <h2>Вход в личный кабинет</h2>
+                <form id="login">
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Электронная почта">
+                        <input type="password" name="password" class="form-control" placeholder="Пароль" >
+                        
+                    </div>
+                    <a class="form_foget">Не помню пароль</a>
+                    <div class="form-buttons">
+                        <button type="submit"  class="form-btn">Войти в кабинет</button>
+                        <button data-popup="popup-reg" type="button" class="open-popup form-btn">Регистрация</button>
+                    </div>
+                </form>
+                <div class="open-register form_close"><img src="img/выйти.png" alt=""></div>
+               
+            </div>
+        </div>
+        <div class="popup popup-reg" data-opened="0">
+            <div class="popup-content content-reg">
+                <h2>Регистрация</h2>
+                <form id="register">
+                    <div class="form-group">
+                        <input type="name" name="name" class="form-control" placeholder="ФИО">
+                        <input type="phone" name="phone" class="form-control" placeholder="Контактный телефон" >
+                        <input type="text" name="index" class="form-control" placeholder="Индекс" >
+                        <input type="text" name="address" class="form-control" placeholder="Ваш полный адрес (только РБ)" >
+                        <input type="email" name="email" class="form-control" placeholder="Электронная почта">
+                        <input type="text" name="text" class="form-control" placeholder="Комментарий" >
+                    </div>
+                    <label><input name="checkbox" class="agree" type="checkbox" ><span>Даю согласие на обработку персональных данных</span></label>
+                    <div class="form-buttons">
+                        <button type="submit" class=" form-btn">Отправить</button>
+                        <button type="button" class="open-register form-btn">Войти в кабинет</button>
+                    </div>
+                </form>
+                <div class="open-register form_close"><img src="img/выйти.png" alt=""></div>
+               <div class="circle-el"></div>
+            </div>
+        </div>
+        <section class="benefits">
+            <div class="benefits_container container">
+                <span class="title-top">Почему выбирают нас?</span>
+                <div class="benefits_list">
+                    <div class="container_top-row">
+                        <div class="benefits_item">
+                            <div class="item_text">Скидки постоянным клиентам от 5%</div>
+                            <div class="item_circl-1"></div>
+                        </div>
+                        <div class="benefits_item">
+                            <div class="item_text">Предлагаем самые выгодные цены</div>
+                        </div>
+                        <div class="benefits_item">
+                            <div class="item_text">Наши покупатели всегда остаются довольны</div>
+                            <div class="item_circl-2"></div>
+                        </div>
+                        <div class="benefits_item">
+                            <div class="item_text">Ширикий ассортимент товаров для всей семьи</div>
+                        </div>
+                    </div>
+                    <div class="container_bot-row">
+                        <div class="benefits_item">
+                            <div class="item_text">Возможность доставки в любой город Беларуси </div>
+                            <div class="item_circl-3"></div>
+                        </div>
+                        <div class="benefits_item">
+                            <div class="item_text">Пункты выдачи заказов рядом с домом</div>
+                            <div class="item_circl-4"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="benefits_massage"><img src="img/clarity_chat-bubble-line.png" alt=""></div>
+                <div class="benefits_up"><img src="" alt=""></div>
+            </div>
+           
+        </section>
+        <section id="sale">
+            <div class="sale_container container">
+                <div class="container_title">
+                    <span class="title-top">Успей купить! </span>
+                    <span class="title-bot">Акции</span>
+                </div>
+                <div class="sale_cards-slider">
+                    <div class="sale_cards owl-carousel">
+                        <div class="cards-item">
+                            <div class="cards-wrap">
+                                <div class="cards-item_img"><img src="img/sale1.png" alt=""></div>
+                                <div class="item_info">
+                                    <div class="item_info-inner">
+                                        <div class="cards-item_prices">
+                                            <div class="cards-item_price">50.00 р</div>
+                                            <div class="cards-item_price-w">65.00 р</div>
+                                        </div>
+                                        <div class="cards-item_title">Блузка женская классная</div>
+                                        <div class="more-info">Подробнее</div>
+                                    </div>
+                                    
+                                    <div class="item_icons">
+                                        <div class="icons_fav">
+                                            <img src="img/clarity_heart-line.svg" alt="">
+                                            <img src="img/clarity_shopping-bag-line.svg" alt="">
+                                        </div>
+                                        <div class="icons_grade">
+                                            <img src="img/clarity_favorite-solid.png" alt="">
+                                            <img src="img/clarity_favorite-solid.png" alt="">
+                                            <img src="img/clarity_favorite-solid.png" alt="">
+                                            <img src="img/clarity_favorite-solid.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                         </div>
+                         <div class="cards-item">
+                            <div class="cards-item_img"><img src="img/sale2.png" alt=""></div>
+                            <div class="item_info">
+                                <div class="item_info-inner">
+                                    <div class="cards-item_prices">
+                                        <div class="cards-item_price">50.00 р</div>
+                                        <div class="cards-item_price-w">65.00 р</div>
+                                    </div>
+                                    <div class="cards-item_title">Блузка женская классная</div>
+                                    <div class="more-info">Подробнее</div>
+                                </div>
+                                
+                                <div class="item_icons">
+                                    <div class="icons_fav">
+                                        <img src="img/clarity_heart-line.svg" alt="">
+                                        <img src="img/clarity_shopping-bag-line.svg" alt="">
+                                    </div>
+                                    <div class="icons_grade">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="cards-item">
+                            <div class="cards-item_img"><img src="img/sale3.png" alt=""></div>
+                            <div class="item_info">
+                                <div class="item_info-inner">
+                                    <div class="cards-item_prices">
+                                        <div class="cards-item_price">50.00 р</div>
+                                        <div class="cards-item_price-w">65.00 р</div>
+                                    </div>
+                                    <div class="cards-item_title">Блузка женская классная</div>
+                                    <div class="more-info">Подробнее</div>
+                                </div>
+                                
+                                <div class="item_icons">
+                                    <div class="icons_fav">
+                                        <img src="img/clarity_heart-line.svg" alt="">
+                                        <img src="img/clarity_shopping-bag-line.svg" alt="">
+                                    </div>
+                                    <div class="icons_grade">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="cards-item">
+                            <div class="cards-item_img"><img src="img/sale4.png" alt=""></div>
+                            <div class="item_info">
+                                <div class="item_info-inner">
+                                    <div class="cards-item_prices">
+                                        <div class="cards-item_price">50.00 р</div>
+                                        <div class="cards-item_price-w">65.00 р</div>
+                                    </div>
+                                    <div class="cards-item_title">Блузка женская классная</div>
+                                    <div class="more-info">Подробнее</div>
+                                </div>
+                                
+                                <div class="item_icons">
+                                    <div class="icons_fav">
+                                        <img src="img/clarity_heart-line.svg" alt="">
+                                        <img src="img/clarity_shopping-bag-line.svg" alt="">
+                                    </div>
+                                    <div class="icons_grade">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="cards-item">
+                            <div class="cards-item_img"><img src="img/sale4.png" alt=""></div>
+                            <div class="item_info">
+                                <div class="item_info-inner">
+                                    <div class="cards-item_prices">
+                                        <div class="cards-item_price">50.00 р</div>
+                                        <div class="cards-item_price-w">65.00 р</div>
+                                    </div>
+                                    <div class="cards-item_title">Блузка женская классная</div>
+                                    <div class="more-info">Подробнее</div>
+                                </div>
+                                
+                                <div class="item_icons">
+                                    <div class="icons_fav">
+                                        <img src="img/clarity_heart-line.svg" alt="">
+                                        <img src="img/clarity_shopping-bag-line.svg" alt="">
+                                    </div>
+                                    <div class="icons_grade">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="cards-item">
+                            <div class="cards-item_img"><img src="img/sale4.png" alt=""></div>
+                            <div class="item_info">
+                                <div class="item_info-inner">
+                                    <div class="cards-item_prices">
+                                        <div class="cards-item_price">50.00 р</div>
+                                        <div class="cards-item_price-w">65.00 р</div>
+                                    </div>
+                                    <div class="cards-item_title">Блузка женская классная</div>
+                                    <div class="more-info">Подробнее</div>
+                                </div>
+                                
+                                <div class="item_icons">
+                                    <div class="icons_fav">
+                                        <img src="img/clarity_heart-line.svg" alt="">
+                                        <img src="img/clarity_shopping-bag-line.svg" alt="">
+                                    </div>
+                                    <div class="icons_grade">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         
+                </div>
+                <button class="sale_cards-next"><img src="img/Arrow 11.png" alt=""></button>
+
+                </div>
+                
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="testimonials_container container">
+                <span class="title-top">Отзывы наших покупателей</span>
+                <div class="customers-testimonials">
+                    <div class="testimonials_slider owl-carousel">
+                        <div class="testimonials_item">
+                            <div class="shadow-effect">
+                                <div class="testimonial_img">
+                                    <img src="img/Ellipse 8.png" alt="">
+                                </div>
+                                <div class="testimonials_info">
+                                    <div class="testimonials_info-grade">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                    </div>
+                                    <div class="testimonials_info-text">Платье село отлично! Хороший материал. Буду заказывать еще, осталась очень довольна</div>
+                                    <div class="testimonials_info-custinfo">
+                                        <div class="custinfo-name">Анна Котлова</div>
+                                        <div class="custinfo-date">23.05.2021</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="testimonials_item">
+                            <div class="shadow-effect">
+                                <div class="testimonial_img">
+                                    <img src="img/Ellipse 8 (1).png" alt="">
+                                </div>
+                                <div class="testimonials_info">
+                                    <div class="testimonials_info-grade">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                        <img src="img/clarity_favorite-solid.png" alt="">
+                                    </div>
+                                    <div class="testimonials_info-text">Заказываю постоянно одежду в этом магазине! Хорошие цены, хорошее качество! Приятные менеджеры! Все быстро, доступно, удобно! Спасибо.</div>
+                                    <div class="testimonials_info-custinfo">
+                                        <div class="custinfo-name">Анна Котлова</div>
+                                        <div class="custinfo-date">23.05.2021</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                    <div class="testimonials-next"><img src="img/Arrow 8.png" alt=""></div>
+                </div>
+                <button class="add-testimoniale">Добавить отзыв</button>
+            </div>
+        </section>
+        <section class="question">
+            <div class="question_container container">
+                <div class="container_title">
+                    <span class="title-top">Часто задаваемые вопросы</span>
+                    <span class="title-bot">FAQ</span>
+                </div>
+                <div class="faq-accordion">
+                    <h3 class="accordion-header">Как сделать заказ?</h3>
+                    <div class="accordion-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est architecto sit omnis enim reprehenderit, placeat illo, corporis, repellat temporibus error debitis reiciendis aut vel repudiandae eaque. Deserunt quidem accusantium natus!</div>
+                    <h3 class="accordion-header">Способы оплаты</h3>
+                    <div class="accordion-text">Alias illo quisquam culpa architecto voluptatem facilis, ratione dolorum asperiores ut repellat sed, nobis cumque laboriosam! Voluptatum, maxime vel reiciendis amet accusantium eos. Iure, magnam delectus debitis molestiae animi saepe.</div>
+                    <h3 class="accordion-header">Доставка</h3>
+                    <div class="accordion-text">Eveniet consectetur sed eos modi dolorem dolore, itaque molestiae a adipisci ab quas voluptates corporis corrupti temporibus, animi excepturi sunt amet repellat ducimus deleniti fuga inventore dicta tempore! Atque, ullam?</div>
+                    <h3 class="accordion-header">Сроки доставки</h3>
+                    <div class="accordion-text">Laborum dolorem suscipit repellendus harum quod vel ipsam, ut accusantium, possimus dolores dignissimos quibusdam rem ducimus? Vitae fugiat commodi ut porro, esse nam perferendis id veritatis voluptatem, dolores aliquid ipsam!</div>
+                    <h3 class="accordion-header">Как сделать обмен?</h3>
+                    <div class="accordion-text">Repudiandae qui optio non ad quisquam, reiciendis aperiam necessitatibus sit fuga reprehenderit. You can find all subjects here. Temporibus expedita recusandae consequatur, voluptate rem tempore, eos iste debitis saepe ut quidem natus unde ad voluptas odio.</div>
+                    <h3 class="accordion-header">Как сделать возврат?</h3>
+                    <div class="accordion-text">Labore nihil aperiam vero, fuga molestias, fugit veritatis dolorem saepe explicabo, quasi nulla see the API. You can pariatur incidunt cum neque, veniam nobis minima dolorum dolore fugiat maiores vero architecto, officiis provident?</div>
+                    <h3 class="accordion-header">Куда и когда вернутся деньги за возвращённый товар?</h3>
+                    <div class="accordion-text">Labore nihil aperiam vero, fuga molestias, fugit veritatis dolorem saepe explicabo, quasi nulla. You can pariatur incidunt cum neque, veniam nobis minima dolorum dolore fugiat maiores vero architecto, officiis provident?</div>
+                </div>
+            </div>
+        </section>
+        <section id="cooperation">
+            <div class="cooperation_container container">
+                <span class="title-top">Сотрудничество с нами</span>
+                <p class="cooperation_text">Наша компания постоянно растёт и расширяет рынок, поэтому мы заинтересованы в новых партнёрах и рассматриваем новые проекты, которые могут быть привлекательны и интересны с коммерческой точки зрения. </p>
+                <div class="cooperation_items">
+                    <div class="cooperation_item">
+                        <span class="cooperation_item-title">Становитесь партнёром</span>
+                        <span class="cooperation_item-text">Регистрируйтесь и 
+                            переходите в свой кабинет</span>
+                    </div>
+                    <div class="cooperation_item">
+                        <span class="cooperation_item-title">Рекламируйте
+                            товары</span>
+                        <span class="cooperation_item-text">Рекламируйте наши товары
+                            на форумах, сайтах, в социальных сетях</span>
+                    </div>
+                    <div class="cooperation_item">
+                        <span class="cooperation_item-title">Приводите покупателей</span>
+                        <span class="cooperation_item-text">Приводите покупателей на 
+                            наш сайт по уникальной ссылке</span>
+                    </div>
+                    <div class="cooperation_item">
+                        <span class="cooperation_item-title">Получайте
+                            бонусы</span>
+                        <span class="cooperation_item-text">Копите бонусы от каждого оплаченного заказа</span>
+                    </div>
+                </div>
+                <div class="cooperation_text2">Это выгодно. Какие преимущества?</div>
+                <div class="cooperation_icons">
+                    <div class="cooperation_icons-inner">
+                        <img src="img/clarity_cog-line.png" alt="">
+                        <span class="cooperation_item-text">Автоматизация процессов</span>
+                    </div>
+                    <div class="cooperation_icons-inner">
+                        <img src="img/clarity_cog-line.png" alt="">
+                        <span class="cooperation_item-text">Пополнение ассортимента</span>
+                    </div>
+                    <div class="cooperation_icons-inner">
+                        <img src="img/clarity_employee-group-line.png" alt="">
+                        <span class="cooperation_item-text">Поддержка и обучение</span>
+                    </div>
+                    <div class="cooperation_icons-inner">
+                        <img src="img/clarity_coin-bag-line.png" alt="">
+                        <span class="cooperation_item-text">Бонусы за новых клиентов</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cooperation_contacts">
+            <div class="contacts-container ">
+                <div class="contacts_block">
+                    <div class="contacts-wrapper  container">
+                        <p class="contacts-title">
+                            Приглашаем  к сотрудничеству производителей и поставщиков одежды, обуви и аксессуаров
+                        </p>
+                        <form id="contact-form">
+                            <input type="text" id="user-name" name="name" class="contact-control" placeholder="Ваше имя">
+                            <input type="email" id="user-email"  name="email" class="contact--control" placeholder="Электронная почта">
+                            <input type="phone" id="user-phone"  name="phone" class="contact-control" placeholder="Номер телефона">
+                            <label><input class="agree" type="checkbox" name="checkbox"><span>Даю согласие на обработку персональных данных</span></label>
+                            <button type="submit" class="send_button" name="send" id="send">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="footer_container container">
+                <div class="info">
+                    <p class="info_title">Информация</p>
+                    <a href="">Главная</a>
+                    <a href="">Акции</a>
+                    <a href="">Каталог</a>
+                    <a href="">Возврат</a>
+                    <a href="">Доставка</a>
+                    <a href="">Партнёрам</a>
+                    <a href="">Способы оплаты</a>
+                    <a href="">Как сделать заказ?</a>
+                </div>
+                <div class="info">
+                    <p class="info_title">Мой кабинет</p>
+                    <a href="">Мои заказы</a>
+                    <a href="">Мои адреса</a>
+                    <a href="">Мои скидки</a>
+                    <a href="">Моя информация</a>
+                </div>
+                <div class="info">
+                    <p class="info_title">Контактная информация</p>
+                    <span class="info_text">ИП Вишневский Иван Сергеевич
+                        государственная регистрация №690867884 от 31.07.2020. 
+                        Логойским горисполкомом
+                        Защита прав потребителей +375259990755</span>
+                </div>
+                <div class="info">
+                    <p class="info_title">Соц. сети</p>
+                    <div class="info_icons">
+                        <img src="img/Vector.png" alt="">
+                        <img src="img/Vector (1).png" alt="">
+                        <img src="img/Group 98.png" alt="">
+                        <img src="img/Vector (2).png" alt="">
+                    </div>
+                    <div class="info_phone">
+                        <img src="img/carbon_phone-voice.png" alt="">
+                        <span class="info_text">+375255990755</span>
+                    </div>
+                    <div class="info_time">
+                        <img src="img/carbon_time.png" alt="">
+                        <span class="info_text">+375255990755</span>
+                    </div>
+                </div>
+                <img class="info_logo" src="img/лого неон 2.png" alt="">
+            </div>
+            <a href="#top" id="totop">
+                <div class="up_button"><img src="img/Arrow 10.png" alt=""></div>
+            </a>
+        </footer>
+    </div>
+
+    
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
